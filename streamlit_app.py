@@ -1,4 +1,12 @@
 import streamlit as st
+hide_github_style = """
+    <style>
+    [data-testid="stDecoration"] {
+        display: none !important;
+    }
+    </style>
+"""
+st.markdown(hide_github_style, unsafe_allow_html=True)
 import pandas as pd
 from datetime import datetime, timedelta, date
 from typing import Union, List, Dict, Any, Optional, Tuple
